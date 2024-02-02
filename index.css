@@ -175,6 +175,40 @@ label {
         display: none;
     }
 }
+@media (min-width: 0px) and (max-width:300px){
+    .loginPart{
+        width: 85%;
+        height: 60vh;
+    }
+    h3{
+        font-size: 0.6rem;
+        margin-left: -33px;
+    }
+    i{
+        font-size: 1.1rem;
+    }
+    .icons{
+        padding-top: 42px;
+    }
+    .icon{
+        padding-top: 55px;
+    }
+    .remember-forgot label{
+        font-size: 0.6rem;
+    }
+    .remember-forgot .li{
+        font-size: 0.6rem;
+        margin-top: 29px;
+    }
+    button{
+        font-size: 0.8rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .register label{
+        font-size: 0.6rem;
+    }
+}
 @media (min-width: 300px) and (max-width:400px){
     img.bg{
         display: none;
