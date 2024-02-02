@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99.5%;
+    z-index: 1;
+}
+
+.container::before {
+    top: 23%;
+    left: 0;
+    background: linear-gradient(to top right, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+}
+.loginPart{
+    z-index: 2;
+}
+
+.container::after {
+    top: 22.3%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom left, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+}
+.loginPart{
+    z-index: 2;
+}
+
+.logo{
+    background: transparent;
+}
+img.bg {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+ .loginPart {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    height: 80vh;
+    width: 33%;
+    background: #13a39c;/*#18a49c*/
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.1), 0 6px 20px 5px rgba(0, 0, 0, 0.19); 
+    /* background: linear-gradient(145deg, #b2f1ee, #13a39c); */ /* #096661*/
+    background: linear-gradient(145deg, rgba(180, 240, 237, 0.877), #13a39c);
+}
+i {
+    padding: 30px 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+h3 {
+    padding: 60px 30px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+}
+
+.inputs {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+}
+
+.icons {
+    color: rgb(46, 43, 43);
+    position: absolute;
+    padding-top: 35px;
+}
+
+input {
+    padding: 20px 20px 20px 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+    border: 2px solid #138b85;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.remember-forgot .icon {
+    font-size: 1rem;
+    margin-right: 2px;
+    margin-left: -15px;
+    color: rgb(46, 43, 43);
+    font-weight: 500;
+}
+
+.remember-forgot {
+    position: absolute;
+    left: 10%;
+    top: 47%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.remember-forgot label {
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.remember-forgot .li {
+    text-decoration: none;
+    color: rgb(46, 43, 43);
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    transform: translateX(-50%);
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 15px 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 11px;
+    border: none;
+    background: rgb(46, 43, 43);
+    color: #fff;
+    cursor: pointer;
+}
+
+.register {
+    position: absolute;
+    left: 10%;
+    top: 85%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    color: #fff;
+}
+
+label {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-family: monospace;
+    cursor: pointer;
+}
+@media (max-width:500px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 78%;
+    }
+    h3{
+        font-size: 0.8rem;
+        font-weight: bolder;
+        margin-left: -16px;
+    }
+    i{
+        font-size: 1.2rem;
+    }
+    .icons{
+        padding-top: 40px;
+    }
+    .icon{
+        padding-top: 48px;
+    }
+    .remember-forgot label{
+        font-size: 0.8rem;
+    }
+    .remember-forgot .li{
+        font-size: 0.8rem;
+        margin-top: 22px;
+    }
+    button{
+        font-size: 0.8rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .register label{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 65%;
+    }
+    h3{
+        font-size: 1rem;
+        margin-left: -24px;
+    }
+    i{
+        font-size: 1.3rem;
+    }
+    .icon{
+        padding-top: 49px;
+    }
+    .remember-forgot label{
+        font-size: 0.9rem;
+    }
+    .remember-forgot .li{
+        font-size: 0.9rem;
+        margin-top: 21px;
+    }
+    button{
+        font-size: 1rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .register label{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 55%;
+    }
+    h3{
+        font-size: 1rem;
+        margin-left: -24px;
+    }
+    i{
+        font-size: 1.3rem;
+    }
+    .icon{
+        padding-top: 49px;
+    }
+    .remember-forgot label{
+        font-size: 0.9rem;
+    }
+    .remember-forgot .li{
+        font-size: 0.9rem;
+        margin-top: 21px;
+    }
+    button{
+        font-size: 1rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .register label{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 701px) and (max-width: 786px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 60%;
+    }
+    .icon{
+        padding-top: 49px;
+    }
+    .remember-forgot label{
+        font-size: 1.1rem;
+    }
+    .remember-forgot .li{
+        font-size: 1.1rem;
+        margin-top: 21px;
+    }
+}
+@media (min-width: 786px) and (max-width: 900px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 55%;
+    }
+    .icon{
+        padding-top: 49px;
+    }
+    .remember-forgot .li{
+        margin-top: 21px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px){
+    .loginPart{
+        width: 40%;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .icon{
+        padding-top: 49px;
+    }
+    .remember-forgot label{
+        font-size: 1rem;
+    }
+    .remember-forgot .li{
+        font-size: 1rem;
+        margin-top: 21px;
+    }
+    .register label{
+        font-size: 1rem;
+    }
+    .container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99.5%;
+    z-index: 1;
+}
+
+.container::before {
+    top: 23.7%;
+    left: 0;
+    background: linear-gradient(to top right, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+}
+.loginPart{
+    z-index: 2;
+}
+
+.container::after {
+    top: 23%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom left, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+}
+.loginPart{
+    z-index: 2;
+}
+}
+@media (min-width: 1201px) and (max-width: 1260px){
+    .container::before,
+    .container::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 99.5%;
+        z-index: 1;
+    }
+    
+    .container::before {
+        top: 23.4%;
+        left: 0;
+        background: linear-gradient(to top right, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+    }
+    .loginPart{
+        z-index: 2;
+    }
+    
+    .container::after {
+        top: 22.8%;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to bottom left, #0ca59d, rgba(180, 240, 237, 0.1), transparent);
+    }
+    .loginPart{
+        z-index: 2;
+    } 
+}
