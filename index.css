@@ -91,6 +91,11 @@ h3 {
     position: absolute;
     padding-top: 35px;
 }
+.iconsp{
+    color: rgb(46, 43, 43);
+    position: absolute;
+    padding-top: 35px;
+}
 
 input {
     padding: 20px 20px 20px 20px;
@@ -190,6 +195,9 @@ label {
     .icons{
         padding-top: 42px;
     }
+    .iconsp{
+        padding-top: 42px;
+    }
     .icon{
         padding-top: 55px;
     }
@@ -210,9 +218,6 @@ label {
     }
 }
 @media (min-width: 300px) and (max-width:400px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 85%;
         height: 70vh;
@@ -247,9 +252,6 @@ label {
     }
 }
 @media (min-width: 401px) and (max-width:500px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 78%;
         height: 70vh;
@@ -263,6 +265,9 @@ label {
         font-size: 1.2rem;
     }
     .icons{
+        padding-top: 40px;
+    }
+    .iconsp{
         padding-top: 40px;
     }
     .icon{
@@ -286,9 +291,6 @@ label {
 }
 
 @media (min-width: 501px) and (max-width: 600px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 65%;
     }
@@ -320,9 +322,6 @@ label {
 }
 
 @media (min-width: 601px) and (max-width: 700px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 55%;
     }
@@ -353,9 +352,6 @@ label {
     }
 }
 @media (min-width: 701px) and (max-width: 786px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 60%;
     }
@@ -371,9 +367,6 @@ label {
     }
 }
 @media (min-width: 786px) and (max-width: 900px){
-    img.bg{
-        display: none;
-    }
     .loginPart{
         width: 55%;
     }
@@ -405,7 +398,7 @@ label {
         font-size: 1rem;
     }
     .container::before,
-.container::after {
+    .container::after {
     content: "";
     position: absolute;
     width: 100%;
