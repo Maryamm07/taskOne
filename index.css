@@ -170,12 +170,50 @@ label {
     font-family: monospace;
     cursor: pointer;
 }
-@media (max-width:500px){
+@media (min-width: 300px) and (max-width:400px){
+    img.bg{
+        display: none;
+    }
+    .loginPart{
+        width: 85%;
+        height: 70vh;
+    }
+    h3{
+        font-size: 0.8rem;
+        margin-left: -33px;
+    }
+    i{
+        font-size: 1.2rem;
+    }
+    .icons{
+        padding-top: 40px;
+    }
+    .icon{
+        padding-top: 48px;
+    }
+    .remember-forgot label{
+        font-size: 0.7rem;
+    }
+    .remember-forgot .li{
+        font-size: 0.7rem;
+        margin-top: 22px;
+    }
+    button{
+        font-size: 0.8rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .register label{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 401px) and (max-width:500px){
     img.bg{
         display: none;
     }
     .loginPart{
         width: 78%;
+        height: 70vh;
     }
     h3{
         font-size: 0.8rem;
